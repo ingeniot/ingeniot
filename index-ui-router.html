@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>IngenIoT</title>
+    <meta name="description" content="IngenIoT, IOT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <html ng-app="miapp">
+
+      <script src="angular.min.js"></script>
+      <script src="angular-ui-router.js"></script>
+      <script>
+      var miapp = angular.module('miapp', ['ui.router']);
+      miapp.config(function($stateProvider, $urlRouterProvider) {
+
+          $urlRouterProvider.otherwise("/estado1");
+
+          $stateProvider
+              .state('estado1', {
+                  url: "/estado1",
+                  templateUrl: "plantilla1.html"
+              })
+              .state('estado2', {
+                  url: "/estado2",
+                  templateUrl: "plantilla2.html",
+              })
+              .state('estado3', {
+                  url: "/estado3",
+                  templateUrl: "plantilla3.html"
+              })
+
+      });
+      </script>
+  </head>
+  <body>
+      <div ui-view></div>
+      <a ui-sref="estado1">Estado1</a>
+      <a ui-sref="estado2">Estado2</a>
+      <a ui-sref="estado3">Estado3</a>
+  </body>
+  </html>

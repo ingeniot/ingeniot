@@ -1,0 +1,242 @@
+
+.contenido{
+  position: relative;
+}
+
+.formulario{
+  display: none;
+  border: 1px solid #f1f1f1;
+  max-width: 450px;
+  z-index: 30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-with: 400px){
+  .formulario{
+    width: 90%;
+  }
+}
+.formulario,
+.formulario-color {
+  background-color: #fff;
+  position: absolute;
+  margin-bottom: 1.5rem;
+ }
+
+.formulario-header {
+  position: absolute;
+  padding: 1rem; }
+  .formulario-header h2,
+  .formulario-header h3,
+  .formulario-header h4 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1; }
+  .formulario-header h3 {
+    font-size: 16px; }
+  .formulario-header h4 {
+    font-size: 15px; }
+  .formulario-header small {
+    display: block;
+    margin-top: 4px;
+    opacity: 0.6; }
+
+.fomrmulario-body {
+  padding: 1rem; }
+
+.formulario-footer {
+  padding: 1rem; }
+
+.formulario-divider {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  margin: 0 16px;
+  height: 0; }
+
+.formulario-tool {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+  .formulario-tool .nav-link {
+    padding: .25rem .35rem; }
+
+.dark .formulario {
+  background-color: #354759; }
+.black .formulario {
+    background-color: #313347; }
+.grey .formulario {
+  background-color: #4b4b4b; }
+
+.modal{
+  z-index: 30;
+}
+.eliminar{
+    z-index: 30;
+}
+.logo {
+    color: black;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+  /*  padding: 0px 0px;*/
+}
+.menu {
+  position:absolute;
+  display: none;
+  background-color: #fff;;
+  text: inherit;
+  opacity: 1;
+  /*position: fixed;*/
+  top: 0px;*/
+  bottom: 150px;
+  right: 150px;*/
+  /*border: 3px solid #f1f1f1;*/
+  z-index: 25;
+  top: 50px;
+  right: 1px;
+  transition: 0.5s;
+  width: 700px;
+  height:650px;
+  /*transform: translate(-50%, -50%);*/
+}
+
+
+.jqstooltip
+{ position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0)
+transparent;background-color: rgba(0,0,0,0.6);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;
+z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}
+
+/*Estilos para el formulario popup
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+*/
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+
+.form-group {
+  margin-bottom: 0;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  /*position: fixed;*/
+  /*top: 0px;*/
+  /*bottom: 150px;
+  right: 150px;*/
+  border: 3px solid #f1f1f1;
+  z-index: 30;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+background-color: white;
+color: black;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=text] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 5px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*Fin estilos formulario popup*/
+
+
+  /*transform: translate(-50%, -50%);*/
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+div.absolute {
+  position: absolute;
+  z-index: 9;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+.md-btn.md-fab.md-xmini {
+  width: 30px;
+  height: 30px;
+  line-height: 21px;
+
+}
+/*
+table.striped>tbody>tr:nth.child(odd)>td,
+table.striped>tbody>tr:nth.child(odd)>td{ //aplica estilo sobre las filas impares
+background-color: #029ac4;
+}
+
+table.striped>tbody>tr>td{
+border: none !important     //sin borde e ! important prioriza este estilo sobre otros que se solapen
+/*border:1px solid red;   //Coloca borde de 1px solido y rojo
+}
+tbody:before{  //en este caso al inseertar un guion transparente lo que se inserta es un espacio entre filas
+content:"-";//introduce un texto
+display:block;//El texto se comporta como elemento de bloque
+line-heigth:1em;
+color:transparent;
+}
+*/

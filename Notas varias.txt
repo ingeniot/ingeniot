@@ -1,0 +1,62 @@
+5/8/20
+Funciona CRUD completo dispositivos, tableros y dominios
+2/8/20
+Se agregó función asignar cliente al dispositivo
+
+1/8/20
+Se elimino la libreria pajax que era la que no cargue las librerias js al navegar y si al actualziar
+porque tiene su propio router que generaba conflicto
+Se agregó activación de cuenta de administrador y de usuario por correo.
+
+27/7/20
+Se agregaron  administradores de grupo y sus vistas y aplicaciones
+Se termincó sistema de recuperacion de contraseña y activación de cuenta
+16/7/20
+Se agrego detalle grupo.
+Se agrego lectura de dispositivo y grupo por id
+Mantiene error en los cambios de vista, que no recarga listas (no carga los scripts)
+
+14/7/20
+Se agrego el listado de grupoIngresado
+Tiene un error que no recarga lista de dispositivos al navegar el menu y volver
+a dispositivos. Hay que recargar con F5. (Aparentemente deja de andar la lisbreria dispositivos.js)
+
+13/7/20
+Se agreg+o nivel de usuario en base de datos y las diferentes barras de navegacion de acuerdo a nivle
+12/7/20
+Tuve que rehacer por tramos, ya qu se habia perdido el control.
+Estado actual:
+Registro, login y logaout de usuario completo
+CRUD de dispositivo completo
+Llega al menu de dispositivo aun sin editar
+2/7/20
+Registro y login con jquery
+28/6/20
+Arma la lista de dispositivos con jquery
+26/6/20
+Elimina y agregar dispositivos validando con AJAX y jquery ,  mostrando errores para reintentar validar
+
+21/6/20
+Elimina y agregar dispositivos validando, pero sin mostrar errores para reintentar validar
+
+Estado:
+Servidor node.js con conexión a la base de datos
+Control LED de NODMCU V3 LOLIN
+	Encendido/apagado desde web
+	Encendido/apagado desde app MQTT DASH
+	Actualización estado en web y en APP
+
+Control LED de SONOFF R2 flashedo con TASMOTA
+	Encendido/apagado desde web
+	Encendido/apagado desde app MQTT DASH
+	Actualización estado en web y en APP
+
+Envio de valores desde NODEMCU V3 LOLIN.
+Envia temp1, temp2 y volts caada 5 segundos subiendo y bajando
+
+En el dashboard recibe :
+	en el temp1 			la temperatura seteada en la app mqtt
+	en temp2 la temperatura temp2  ENVIADA POR EL NodeMCU
+	eN  volts Volts enviados por el NODEMCU
+
+Se debe ingresar directo a login y desde ahi se accesde al dashboard
